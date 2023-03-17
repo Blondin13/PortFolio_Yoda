@@ -1,0 +1,110 @@
+{% extends 'base.html.twig' %}
+
+    {% block header %}
+    	{% include "/nav-bar/nav-bar.html.twig" with {'active' : '/cv'} %}
+    {% endblock %}
+
+    {% block main %}
+		<main class="main-cv container-fluid">
+        
+        <div class="row">
+            <section class="bg-dark col-lg-3 p-5">
+                <article class="text-light">
+                    <div class="div-photo-moi">
+                      <img class=" photo-moi mb-3 w-100 h-100 text-center" src="assets/img/yoda-cv.jpg" width="200" height="200" alt="photo-moi">
+                    </div>
+                      <div class="div-cv-mg">
+                        <p class="text-nom mb-1 text-dark"><b>Yoda</b></p>
+                        <p class="p-cv mb-1">Célibataire par choix (Pas le mien)</p>
+                        <p class="p-cv mb-1">Permis vaisseau spatial, Véhiculé</p>
+                        <br>
+                        <p class="text-nom mb-1 text-dark"><b>Coordonnéés</b></p>
+                        <p class="p-cv mb-1">Temple Jedi</p>
+                        <p class="p-cv mb-1">Coruscant</p>
+                        <p class="p-cv mb-1">Mais actuellement hébergé sur Marseille</p>
+                        <p class="p-cv mb-1">(une planète assez bizarre)</p>
+                        <br>
+                        <p class="text-nom mb-1 text-dark"><b>Téléphone & Mail</b></p>
+                        <p class="p-cv mb-1">06.27.86.79.53</p>
+                        <p class="p-cv mb-1">Yoda.maitre.jedi.de.la.force@gmail.com</p>
+                        <br>
+                        <p class="text-nom mb-1 text-dark"><b>Loisir</b></p>
+                        <p class="p-cv mb-1">Musique, Jeux vidéo</p>
+                        <p class="p-cv mb-1">Sport, Informatique</p>
+                        <p class="p-cv mb-1">combat aux sabres laser</p>
+                        <p class="p-cv mb-1">Méditation</p>
+                        <br>
+                        <p class="text-nom mb-1 text-dark"><b>Langues</b></p>
+                        <p class="p-cv mb-1">Le Huttese</p>
+                        <p class="p-cv mb-1">Le Shyriiwook</p>
+                        <p class="p-cv mb-1">Le Wookies</p>
+                        <p class="p-cv mb-1">Et d'autres</p>
+                        <br>
+                        <p class="text-nom mb-1 text-dark"><b>Réseaux Sociaux</b></p>
+                        <div class="div-logos-reseaux">
+                        <a class="logos-reseaux" target="_blank" href="https://github.com/Blondin13"><img src="/assets/img/git.png" height="25px" width="25px" alt="logo-git" class="me-1"><a class="logos-reseaux" target="_blank" href="https://www.linkedin.com/in/buire-christophe-294008224/"><img src="/assets/img/in.png" height="28px" width="28px" alt="logo-in"></a>
+                      </div>
+                    </div>
+                </article>
+            </section>
+            <section class=" section-cv col-lg-9 col-md-12">
+                <header>
+                    <h1 class="h1-cv"><b>Développeur Web</b></h1>
+                </header>
+                <article class="article-profil">
+                    <p class="text-nom2 text-dark"><b>Profil</b></p>
+                    <p class="p-cv2 mb-1">Maître Jedi, je suis depuis des milliers d'années.</p>
+                    <p class="p-cv2 mb-1">La Force, maîtriser et mentorat de Jedi et Padawans, j'ai fait.</p> 
+                    <p class="p-cv2 mb-1"> Mais maintenant, développement web, j'apprend. Car nouvelles technologies, il y a. Projets intéressants, il y a.</p>
+                    <p class="p-cv2 mb-1">Nouveaux défis, il y a. Mon expérience en leadership et en résolution de problèmes, je peux utiliser.</p>
+                    <p class="p-cv2 mb-1">Mon esprit ouvert, je garde. Apprendre, je veux. Alternance, je cherche. Contactez moi, hésitez vous ne devez pas.<p>
+                </article>                
+
+                <article class="article-profil">
+                    <p class="text-nom2 text-dark"><b>Compétences</b></p>
+                    <p class="p-cv2 mb-1"><span class="span-orange"><b>Formation-dev:</b></span> HTML, Bootstrap, Twig, CSS, Responsive, JavaScript, Type Script, Node.js, React, PHP, MySQL, MongoDB, Ubuntu,</p>
+                    <p class="p-cv2 mb-1">Figma pour mise en page et maquette fonctionnelle.</p>
+                    <p class="p-cv2 mb-1"><span class="span-orange"><b>Maîtrise de la Force</b></span> Capacité à utiliser la Force pour la lévitation, la télékinésie, la télépathie et la précognition.</p>
+                    <p class="p-cv2 mb-1"><span class="span-orange"><b>Maîtrise des armes Jedi:</b></span> Utilisation de sabres laser et de techniques de combat Jedi.</p>
+                    <p class="p-cv2 mb-1"><span class="span-orange"><b>Leadership:</b></span> Direction et mentorat de Jedi et de Padawans.</p>
+                    <p class="p-cv2 mb-1"><span class="span-orange"><b>Diplomatie</b></span> Résolution de conflits et négociation avec différentes espèces.</p>
+                    <p class="p-cv2 mb-1"><span class="span-orange"><b>Connaissance approfondie de la galaxie:</b></span> Histoire, cultures et politique des différentes planètes et systèmes..</p>
+                </article>
+                <article class="article-profil">
+                    <p class="text-nom2 text-dark"><b>Expériences proféssionnelles</b></p>
+                    
+                    <p class="p-cv2 mb-1"><b> 2021 /2023: </b> <span class="span-orange"><b> ECOLE RI7 </b></span></p>
+                    <p class="p-cv2 mb-4">En formation pour devenir développeur d'application web.</p>
+
+                    <p class="p-cv2 mb-1"><b> -19 Avant B.Y /2021: </b> <span class="span-orange"><b> JEDI-COUNCIL </b></span></p>
+                    <p class="p-cv2 mb-4">Maître Jedi, Jedi Council (plusieurs milliers d'années).</p>
+
+                    <p class="p-cv2 mb-4">Professeur de la Force, Jedi Temple (plusieurs milliers d'années)</p>
+
+                    <p class="p-cv2 mb-4">Conseiller de la République Galactique (plusieurs siècles)</p>
+
+                    <p class="p-cv2 mb-4">Membre actif de la lutte contre l'Empire Sith (plusieurs siècles)</p>
+                </article>
+                <article class="article-profil">
+                    <p class="text-nom2 text-dark"><b>Formations</b></p>
+                    <p class="p-cv2 mb-1"><b> 2021 /2023: </b> <span class="span-orange"><b> ECOLE RI7 </b></span></p>
+                    <p class="p-cv2 mb-4">Concepteur développeur d'application web.</p>
+
+                    <p class="p-cv2 mb-1"><b> -19 Avant B.Y /2021: </b> <span class="span-orange"><b> JEDI-COUNCIL </b></span></p>
+                    <p class="p-cv2 mb-4">Maître Jedi (plusieurs milliers d'années).</p>
+                </article>
+            </section>
+        </div>
+    </main>
+    <div class="div-btn">
+      <div>
+        <a target="_blank" class="btn" href="assets/cv/CV-Yoda.pdf">
+          <b class="text-btn-cv">voir & télécharger cv.pdf</b>
+        </a>
+      </div>
+    </div>   
+    {% endblock %}
+    
+    {% block footer %}
+        {% include "/footer/footer.html.twig" %}
+    {% endblock %}

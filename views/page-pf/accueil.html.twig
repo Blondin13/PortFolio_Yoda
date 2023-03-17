@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+    {% block header %}
+    	{% include "/nav-bar/nav-bar.html.twig" with {'active': '/accueil'} %}
+    {% endblock %}
+
+    {% block main %}
+         <main class="main-index container">
+            <div class="div-mask"> </div>
+            <video autoplay>
+                <source src="/assets/video/film-yoda.mp4" type="video/mp4">
+            </video> 
+        </main>
+    {% endblock %}
+    
+    {% block footer %}
+        {% include "/footer/footer.html.twig" %}
+    {% endblock %}  
+    

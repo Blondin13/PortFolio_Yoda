@@ -1,0 +1,142 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+	{% include "/nav-bar/nav-bar.html.twig" with {'active' : '/projets'} %}
+{% endblock %}
+
+{% block main %}
+	<main class="main-projets">
+		<div class="div-p-yado"><img src="/assets/img/yoda.png"/></div>
+		<article class="article-projets">
+			<input classe="btn-radio" type="radio" name="position"/>
+			<input classe="btn-radio" type="radio" name="position"/>
+			<input classe="btn-radio" type="radio" name="position"/>
+			<input classe="btn-radio" type="radio" name="position" checked/>
+			<input classe="btn-radio" type="radio" name="position"/>
+			<input classe="btn-radio" type="radio" name="position"/>
+			<input classe="btn-radio" type="radio" name="position"/>
+
+			<main id="carousel">
+				
+				<div class="item " id="div-card">
+					<img src="/assets/img/cv-online.jpg" class="card-img-top" alt="/public/assets/img/frame.jpg"/>
+					<div class="card-body">
+						<p class="card-text"><b>Création d'un C.V un peut stylé en HTML, CSS et RESPONSIVE fait en exercice à l'école Ri7 où l'on suit la formation.</b></p>
+						<p>
+							<a class="a-git" target="_blank" href="https://github.com/Blondin13/Projet-cv_2022">LIEN GitHub</a>
+						</p>
+						<p>
+							<a class="a-git" target="_blank" href="/assets/projets/fiche-cv-en-ligne.pdf">Voir fiche projet</a>
+						</p>
+						<p>
+							<a target="_blank" href="http://christophe-buire.ri7.tech/Projet-cv_2022/index.html" class="btn btn-dark">CLIQUER POUR VOIR</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="item " id="div-card">
+					<img src="/assets/img/drap-react.jpg" class="card-img-top" alt="/public/assets/img/frame.jpg"/>
+					<div class="card-body">
+						<p class="card-text">Création d'une page en React sur les drapeaux du monde avec leur capital et leur population fait en auto-formation.</p>
+						<p>
+							<a class="a-git" target="_blank" href="https://github.com/Blondin13/Drapeaux-pays-react">LIEN GitHub</a>
+						</p>
+						<p>
+							<a class="a-git" target="_blank" href="/assets/projets/fiche-matrix-en-ligne.pdf">Voir fiche projet</a>
+						</p>
+						<p class= p-card-btn>
+							<a target="_blank" href="http://christophe-buire.ri7.tech:8080/" class="btn btn-dark">Cliquez pour jouer</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="item " id="div-card">
+					<img src="/assets/img/morpion-jeu.jpg" class="card-img-top" alt="/public/assets/img/frame.jpg"/>
+					<div class="card-body">
+						<p class="card-text">Création du jeu morpion en HTML, CSS, RESPONSIVE, J.S et NODE.JS fait en exercice à l'école Ri7.</p>
+						<p>
+							<a class="a-git" target="_blank" href="https://github.com/Blondin13/Morpion_Ri7">LIEN GitHub</a>
+						</p>
+						<p>
+							<a class="a-git" target="_blank" href="/assets/projets/fiche-morpion-en-ligne.pdf">Voir fiche projet</a>
+						</p>
+						<p class= p-card-btn>
+							<a target="_blank" href="https://christophe-buire.ri7.tech/morpion_Ri7/views/index.html" class="btn btn-dark">Cliquez pour jouer</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="item " id="div-card">
+					<img src="/assets/img/mario-figma.jpg" class="card-img-top" alt="/public/assets/img/frame.jpg"/>
+					<div class="card-body">
+						<p class="card-text">Création d'un "pseudo" site HTML, CSS, RESPONSIVE, par rapport à une maquette que l'on nous a créé sur Figma.</p>
+						<p>
+							<a class="a-git" target="_blank" href="https://github.com/Blondin13/Integration_mario_figma">LIEN GitHub</a>
+						</p>
+						<p>
+							<a class="a-git" target="_blank" href="/assets/projets/fiche-figma-integration-en-ligne.pdf">Voir fiche projet</a>
+						</p>
+						<p class= p-card-btn>
+							<a target="_blank" href="https://christophe-buire.ri7.tech/Integration_mario_figma/" class="btn btn-dark">Cliquez pour voir</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="item " id="div-card">
+					<img src="/assets/img/puissance-4-jeu.jpg" class="card-img-top" alt="/public/assets/img/frame.jpg"/>
+					<div class="card-body">
+						<p class="card-text">Création du jeu Puissance 4 en HTML, CSS, RESPONSIVE, J.S et NODE.JS fait en exercice à l'école Ri7.</p>
+						<p>
+							<a class="a-git" target="_blank" href="https://github.com/Blondin13/Puissance-4.git">LIEN GitHub</a>
+						</p>
+						<p>
+							<a class="a-git" target="_blank" href="/assets/projets/fiche-puissance-4-en-ligne.pdf">Voir fiche projet</a>
+						</p>
+						<p class= p-card-btn>
+							<a target="_blank" href="https://christophe-buire.ri7.tech/Puissance-4/views/index.html" class="btn btn-dark">Cliquez pour jouer</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="item " id="div-card">
+					<img src="/assets/img/puissance-4-gravity-jeu.jpg" class="card-img-top" alt="/public/assets/img/frame.jpg"/>
+					<div class="card-body">
+						<p class="card-text">Création du jeu Puissance 4 en HTML, CSS, RESPONSIVE, J.S et node.js, petit plus du précedent la gravité.</p>
+						<p>
+							<a class="a-git" target="_blank" href="https://github.com/Blondin13/Puissance-4-Gravity.git">LIEN GitHub</a>
+						</p>
+						<p>
+							<a class="a-git" target="_blank" href="/assets/projets/fiche-puissance-4-gravity-en-ligne.pdf">Voir fiche projet</a>
+						</p>
+						<p class= p-card-btn>
+							<a target="_blank" href="https://christophe-buire.ri7.tech/Puissance-4-Gravity/views/index.html" class="btn btn-dark">Cliquez pour jouoer</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="item " id="div-card">
+					<img src="/assets/img/pokedex.jpg" class="card-img-top" alt="/public/assets/img/frame.jpg"/>
+					<div class="card-body">
+						<p class="card-text">Création pokedex HTML, CSS, RESPONSIVE, MONGO.DB JS et NODE.JS fait en exercice à l'école Ri7.</p>
+						<p>
+							<a class="a-git" target="_blank" href="https://github.com/Blondin13/Pokemon_pokedex">LIEN GitHub</a>
+						</p>
+						<p>
+							<a class="a-git" target="_blank" href="/assets/projets/fiche-pokedex-en-ligne.pdf">Voir fiche projet</a>
+						</p>
+						<p class= p-card-btn>
+							<a target="_blank" href="http://christophe-buire.ri7.tech:2404/login" class="btn btn-dark">Cliquez pour voir</a>
+						</p>
+					</div>
+				</div>
+
+			</main>
+
+		</article>
+	</main>
+	
+{% endblock %}
+
+{% block footer %}
+	{% include "/footer/footer.html.twig" %}
+{% endblock %}

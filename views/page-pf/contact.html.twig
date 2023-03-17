@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+	{% include "/nav-bar/nav-bar.html.twig" with {'active' : '/contact'} %}
+{% endblock %}
+
+{% block main %}
+	<main class="main-contact container">
+		<audio autoplay>
+            <source src="/assets/mp3/bar.mp3" type= "audio/mp3">
+        </audio>
+		<article class="article-contact-text">
+			<p class="text-contact">- Contact -</p>
+		</article>
+		<article class="article-contact">
+			<form id="cont" action="/contact" method="post">
+				<fieldset>
+					<legend>
+						<b>Me contacter</b>
+					</legend>
+					<label for="emailinput">
+						<b>votre email</b>
+					</label>
+					<input type="text" name="email" id="emailinput" placeholder="Contact@exemple.com"/>
+					<label for="nameinput">
+						<b>votre nom</b>
+					</label>
+					<input type="text" name="fisrtname" id="nameinput" placeholder="Dupont"/>
+					<br/>
+					<div>
+						<label for="message">
+							<b>votre message</b>
+						</label>
+						<textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message.........."></textarea>
+					</div>
+					<button>
+						<b>Envoyer votre message</b>
+					</button>
+				</fieldset>
+			</form>
+		</article>
+	</main>
+	<div clas="div-affiche-message">
+		<span class="span-affiche-message">{{message}}</span>
+	</div>
+{% endblock %}
+
+{% block footer %}
+	{% include "/footer/footer.html.twig" %}
+{% endblock %}
