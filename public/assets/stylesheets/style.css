@@ -113,10 +113,8 @@ a.active {
 
 /*----------------------------------------------ACCUEIL-----------------------------------------------*/
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url(/assets/img/bg-b.jpg);
-    background-size: cover;
+    margin: 0 !important;
+    padding: 0 !important;  
     background-color: rgb(0, 0, 0);
 }
 
@@ -132,10 +130,14 @@ body {
     background-color: black;
 }
 
+video{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 /*----------------------------------------------PROJETS----------------------------------------------*/
 .main-projets {
     flex-direction: column;
-    margin-top: 40px;
     background-image: url(/assets/img/bg-p.jpg);
     background-size: cover;
     height: 80vh;
@@ -395,7 +397,7 @@ section {
 }
 
 .btn {
-    background-color: black;
+    background-color: rgb(41, 40, 40);
     transition: background 1s;
     border-radius: 5px;
     box-shadow: 1px 2px 3px grey, 0 0 1em #ddad1c, 0 0 0.2em #ddad1c;
@@ -410,6 +412,7 @@ section {
 
 .btn:hover {
     background-color: #ddad1c;
+    box-shadow: 1px 2px 3px rgb(0, 0, 0), 0 0 1em grey, 0 0 0.2em grey;
 }
 
 /*-------------------------------------------CONTACT-------------------------------------------------*/
